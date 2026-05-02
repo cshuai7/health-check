@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>体检明细查看</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft Yahei", sans-serif;
+        }
+        body {
+            background-color: #f5f5f5;
+        }
+        .page-container {
+            max-width: 480px;
+            margin: 0 auto;
+            background-color: #fff;
+            min-height: 100vh;
+        }
+        .header-bar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 16px;
+            background-color: #f0f0f0;
+            position: relative;
+        }
+        .header-bar .back-btn {
+            position: absolute;
+            left: 16px;
+            font-size: 24px;
+            color: #333;
+            cursor: pointer;
+        }
+        .header-bar h1 {
+            font-size: 20px;
+            color: #333;
+        }
+        .sub-header {
+            text-align: center;
+            font-size: 14px;
+            color: #666;
+            padding: 4px 0 12px;
+            background-color: #f0f0f0;
+        }
+        .divider {
+            height: 2px;
+            background-color: #a0c8f0;
+        }
+        .info-card {
+            padding: 20px;
+        }
+        .info-header {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+            margin-bottom: 24px;
+        }
+        .avatar {
+            width: 120px;
+            height: auto;
+            background-color: #eee;
+            border-radius: 4px;
+        }
+        .info-details {
+            flex: 1;
+            font-size: 18px;
+            line-height: 2.2;
+        }
+        .info-details span {
+            color: #333;
+            font-weight: 500;
+        }
+        .info-list {
+            background-color: #f0f7ff;
+            border-radius: 8px;
+            padding: 16px;
+        }
+        .info-item {
+            display: flex;
+            padding: 8px 0;
+            border-left: 3px solid #4096ff;
+            padding-left: 12px;
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+        .info-item:last-child {
+            margin-bottom: 0;
+        }
+        .info-item .label {
+            color: #333;
+            font-weight: 500;
+            min-width: 120px;
+        }
+        .empty-section {
+            margin: 20px 16px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            padding: 24px;
+        }
+        .empty-section h3 {
+            font-size: 20px;
+            color: #333;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        <!-- 顶部导航 -->
+        <div class="header-bar">
+            <div class="back-btn">×</div>
+            <h1>体检明细查看</h1>
+        </div>
+        <div class="sub-header">jkz.sh.cn</div>
+        <div class="divider"></div>
+
+        <!-- 信息卡片 -->
+        <div class="info-card">
+            <div class="info-header">
+                <img class="avatar" src="https://via.placeholder.com/120x150?text=照片" alt="头像">
+                <div class="info-details">
+                    <div><span>姓名:</span> 陈帅</div>
+                    <div><span>健康证号:</span> 29022307280728161 44100125</div>
+                    <div><span>体检结果:</span> 合格</div>
+                    <div><span>证件号码:</span> ***************2012</div>
+                </div>
+            </div>
+
+            <div class="info-list">
+                <div class="info-item">
+                    <div class="label">检查单位:</div>
+                    <div>上海杨思医院</div>
+                </div>
+                <div class="info-item">
+                    <div class="label">体检类型:</div>
+                    <div>食品、饮用水、化妆品、公共场所</div>
+                </div>
+                <div class="info-item">
+                    <div class="label">报告日期:</div>
+                    <div>2026-04-28</div>
+                </div>
+                <div class="info-item">
+                    <div class="label">有效日期:</div>
+                    <div>2027-07-27</div>
+                </div>
+                <div class="info-item">
+                    <div class="label">上传日期:</div>
+                    <div>2026-04-22</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 不合格原因 -->
+        <div class="empty-section">
+            <h3>不合格原因:无</h3>
+        </div>
+    </div>
+</body>
+</html>
